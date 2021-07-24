@@ -3,7 +3,8 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Aa]ssets/Asset Packs
+/[Aa]ssets/Asset*
+/[Aa]ssets/Polygon*
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
