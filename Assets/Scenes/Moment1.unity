@@ -2787,6 +2787,7 @@ GameObject:
   - component: {fileID: 368942312}
   - component: {fileID: 368942311}
   - component: {fileID: 368942313}
+  - component: {fileID: 368942314}
   m_Layer: 2
   m_Name: Intro Sequence
   m_TagString: Untagged
@@ -2872,6 +2873,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24ff0ea171bdd4940b473a9e22f69dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &368942314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368942308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f910c97a586dfa54e8615a923ae094dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &378526663
