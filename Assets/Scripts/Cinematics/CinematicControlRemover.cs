@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using RPG.Core;
 using RPG.Control;
+using RPG.Movement; //test dependency
 
 namespace RPG.Cinematics
 {
@@ -18,8 +19,9 @@ namespace RPG.Cinematics
         }
 
         private void DisableControl(PlayableDirector pd)
-        {      
-            player.GetComponent<ActionScheduler>().CancelCurrentAction();
+        {
+            player.GetComponent<Mover>().Cancel(); // test stops mover here and in fighter
+            player.GetComponent<ActionScheduler>().CancelCurrentAction(); // cancels attack action not movement
             player.GetComponent<PlayerController>().enabled = false;
         }
 
