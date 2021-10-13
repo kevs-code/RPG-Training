@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: characterClass
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8786617128567241017, guid: 31b46ef0736b99f49a8edac80a2ae377, type: 3}
+      propertyPath: levelUpParticleEffect
+      value: 
+      objectReference: {fileID: 8095732310322227628, guid: ad0aca3fd2eb71745858277ea3a5bada, type: 3}
     - target: {fileID: 8827473613882026009, guid: 31b46ef0736b99f49a8edac80a2ae377, type: 3}
       propertyPath: healthPoints
       value: 200
