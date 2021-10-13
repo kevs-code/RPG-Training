@@ -4,10 +4,11 @@ using RPG.Saving;
 using RPG.Attributes;
 using RPG.Stats;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable
+    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] Transform rightHandTransform = null;
@@ -89,16 +90,6 @@ namespace RPG.Combat
             }
         }
 
-        void Shoot()
-        {
-            Hit();
-        }
-
-        private bool GetIsInRange()
-        {
-            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.GetWeaponRange();
-        }
-
         public bool CanAttack(GameObject combatTarget)
         {
             if (combatTarget == null) return false;
@@ -125,6 +116,14 @@ namespace RPG.Combat
             GetComponent<Animator>().SetTrigger("stopAttack");
         }
 
+        public IEnumerable<float> GetAdditiveModifier(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return currentWeapon.GetWeaponDamage();
+            }
+        }
+
         public object CaptureState()
         {
             return currentWeapon.name;
@@ -135,6 +134,17 @@ namespace RPG.Combat
             string weaponName = (string)state;
             Weapon weapon = Resources.Load<Weapon>(weaponName);
             EquipWeapon(weapon);
+        }
+
+
+        private void Shoot()
+        {
+            Hit();
+        }
+
+        private bool GetIsInRange()
+        {
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.GetWeaponRange();
         }
     }
 }
