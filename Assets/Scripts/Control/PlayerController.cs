@@ -3,6 +3,7 @@ using RPG.Combat;
 using UnityEngine;
 using RPG.Attributes;
 using System;
+using UnityEngine.EventSystems;
 
 namespace RPG.Control
 {
@@ -14,7 +15,8 @@ namespace RPG.Control
         {
             None,
             Movement,
-            Combat
+            Combat,
+            UI
         }
 
         [System.Serializable]
@@ -34,30 +36,43 @@ namespace RPG.Control
 
         void Update()
         {
-            if (health.IsDead()) return;
+            if (InteractWithUI()) return;
+            if (health.IsDead())
+            {
+                SetCursor(CursorType.None);
+                return;
+            }
 
-            if(InteractWithCombat()) return;
-            if(InteractWithMovement()) return;
+            if (InteractWithComponent()) return;
+            if (InteractWithMovement()) return;
 
             SetCursor(CursorType.None);
         }
 
-        private bool InteractWithCombat()
+        private bool InteractWithUI()
+        {
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                SetCursor(CursorType.UI);
+                return true;
+            }
+            return false;
+        }
+
+        private bool InteractWithComponent()
         {
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
             foreach (RaycastHit hit in hits)
             {
-                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-                if (target == null) continue;
-
-
-                if (!GetComponent<Fighter>().CanAttack(target.gameObject)) continue;
-                if (Input.GetMouseButton(0))
+                IRaycastable[] raycastables = hit.transform.GetComponents<IRaycastable>();
+                foreach (IRaycastable raycastable in raycastables)
                 {
-                    GetComponent<Fighter>().Attack(target.gameObject);
+                    if (raycastable.HandleRaycast(this))
+                    {
+                        SetCursor(CursorType.Combat);
+                        return true;
+                    }
                 }
-                SetCursor(CursorType.Combat);
-                return true; // cursor affordance onHover
             }
             return false;
         }
