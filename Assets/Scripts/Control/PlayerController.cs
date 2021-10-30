@@ -130,7 +130,7 @@ namespace RPG.Control
             if (path.corners.Length < 2) return total;
             for (int i = 0; i < path.corners.Length - 1; i++)
             {
-                total += Vector3.Distance(path.corners[i], path.corners[i + 1])
+                total += Vector3.Distance(path.corners[i], path.corners[i + 1]);
             }
 
             return total;
