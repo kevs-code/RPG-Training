@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 namespace RPG.Stats
 {
@@ -14,7 +15,7 @@ namespace RPG.Stats
 
         private void Update()
         {
-            GetComponent<Text>().text = string.Format("{0:0}", baseStats.GetLevel());
+            GetComponent<Text>().text = String.Format("{0:0}", baseStats.GetLevel());
         }
     }
 }
