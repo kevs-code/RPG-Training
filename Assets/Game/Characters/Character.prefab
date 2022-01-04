@@ -405,6 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   maxSpeed: 6
+  maxNavMeshPathLength: 40
 --- !u!95 &1345374973
 Animator:
   serializedVersion: 3
@@ -492,6 +493,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onDie:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 6233414556502717314}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
@@ -504,9 +508,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onDie:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &3163318902261679201
 MonoBehaviour:
   m_ObjectHideFlags: 0
