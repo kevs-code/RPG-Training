@@ -6951,7 +6951,7 @@ PrefabInstance:
     - target: {fileID: 7073246907417049347, guid: 22ea0ba7aae6af84f8f7dff959ca7d58, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: 1ffaf9d02ba088840b7afc77cbce0444, type: 2}
+      objectReference: {fileID: 11400000, guid: 93de1d6700a657b46bef20606d71ac75, type: 2}
     - target: {fileID: 8927741753764806563, guid: 22ea0ba7aae6af84f8f7dff959ca7d58, type: 3}
       propertyPath: m_Name
       value: Hat Pickup Spawner
@@ -16145,7 +16145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2801401532256567739, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.74176
+      value: -570.74963
       objectReference: {fileID: 0}
     - target: {fileID: 2801744476903332091, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchorMax.x
@@ -16710,7 +16710,7 @@ PrefabInstance:
     - target: {fileID: 9002815170643990134, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: f4d0f6555a4134445b02e052a6220f02, type: 2}
+      objectReference: {fileID: 11400000, guid: ecd79a9f63e040545bbebe7c7d8a3b17, type: 2}
     - target: {fileID: 9034707244600083751, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
