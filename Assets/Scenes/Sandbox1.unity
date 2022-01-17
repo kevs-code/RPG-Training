@@ -575,6 +575,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3473300015006645780, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 582b2d6c-0819-489f-8759-bb6b823d744c
+      objectReference: {fileID: 0}
     - target: {fileID: 4415213262370142899, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
       propertyPath: patrolPath
       value: 
@@ -677,6 +681,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3473300015006645780, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 8ee23515-e190-476a-8865-496bff6c06d4
+      objectReference: {fileID: 0}
     - target: {fileID: 7013373754127422060, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
       propertyPath: healthPoints
       value: 10
@@ -1086,6 +1094,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3473300015006645780, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: uniqueIdentifier
+      value: d2201d4e-0b3c-4800-96cb-fc5014215bf9
+      objectReference: {fileID: 0}
     - target: {fileID: 7013373754127422060, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
       propertyPath: healthPoints
       value: 10
