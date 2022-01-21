@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4757381769585286473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 053481781670aa8458a3fe242b5c9686, type: 3}
+  m_Name: eb45f7e6-7797-4415-81d9-615c8a9fc6a7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 
+  children:
+  - f57f3184-a110-42cc-8d7d-13bb922c9ca8
+  rect:
+    serializedVersion: 2
+    x: 247
+    y: 59
+    width: 200
+    height: 100
+--- !u!114 &-4140646183770421615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 053481781670aa8458a3fe242b5c9686, type: 3}
+  m_Name: f57f3184-a110-42cc-8d7d-13bb922c9ca8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 497
+    y: 59
+    width: 200
+    height: 100
+--- !u!114 &-2103090163018983457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 053481781670aa8458a3fe242b5c9686, type: 3}
+  m_Name: 75e87656-15ae-4ddf-825a-6d210edb4def
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 
+  children:
+  - eb45f7e6-7797-4415-81d9-615c8a9fc6a7
+  rect:
+    serializedVersion: 2
+    x: -3
+    y: 59
+    width: 200
+    height: 100
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbe3072344bcad4eb4e8de109a66428, type: 3}
+  m_Name: Hello
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -2103090163018983457}
+  - {fileID: -4757381769585286473}
+  - {fileID: -4140646183770421615}
