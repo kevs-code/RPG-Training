@@ -1,27 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5906041608455913614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 053481781670aa8458a3fe242b5c9686, type: 3}
-  m_Name: ebab74ed-a7a5-4afa-b9e9-d437b096e3c5
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: 
-  children:
-  - 3679dc73-862a-43c0-9ecf-1b061ba7a362
-  rect:
-    serializedVersion: 2
-    x: 90
-    y: 98
-    width: 200
-    height: 100
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dbe3072344bcad4eb4e8de109a66428, type: 3}
-  m_Name: ad
+  m_Name: Force Majeur
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -5906041608455913614}
-  - {fileID: 5782180363736391556}
---- !u!114 &5782180363736391556
+  - {fileID: 451940691883411158}
+--- !u!114 &451940691883411158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,14 +24,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 053481781670aa8458a3fe242b5c9686, type: 3}
-  m_Name: 3679dc73-862a-43c0-9ecf-1b061ba7a362
+  m_Name: dc7a1d3c-3fe6-46e9-8cfd-5072ea948b4b
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
+  isPlayerSpeaking: 0
   text: 
   children: []
   rect:
     serializedVersion: 2
-    x: 340
-    y: 98
+    x: 0
+    y: 0
     width: 200
     height: 100
