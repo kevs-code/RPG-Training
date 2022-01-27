@@ -14,13 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: meep meep
-  children: []
+  children:
+  - 88052be0-cdc8-4682-b39e-9ecd93483c00
   rect:
     serializedVersion: 2
     x: 252
-    y: 0
+    y: -2
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,6 +39,7 @@ MonoBehaviour:
   nodes:
   - {fileID: 3508551173861800289}
   - {fileID: -3036895961827297024}
+  - {fileID: 8395329890482618577}
 --- !u!114 &3508551173861800289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,3 +62,28 @@ MonoBehaviour:
     y: 0
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &8395329890482618577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 053481781670aa8458a3fe242b5c9686, type: 3}
+  m_Name: 88052be0-cdc8-4682-b39e-9ecd93483c00
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: meep
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 502
+    y: -2
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
