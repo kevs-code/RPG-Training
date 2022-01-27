@@ -47,7 +47,7 @@ MonoBehaviour:
   waypointTolerance: 1
   waypointDwellTime: 3
   patrolSpeedFraction: 0.2
-  shoutDistance: 5
+  shoutDistance: 25
 --- !u!114 &5670582915669475309
 MonoBehaviour:
   m_ObjectHideFlags: 0

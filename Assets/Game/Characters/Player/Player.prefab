@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f1e791e551d22a48a659fd32259e023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testDialogue: {fileID: 11400000, guid: 6513f6d1cba098f44b16c251f8f370e0, type: 2}
+  playerName: Princess Carol
 --- !u!114 &5819119818418216283
 MonoBehaviour:
   m_ObjectHideFlags: 0
