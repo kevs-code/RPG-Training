@@ -202,6 +202,7 @@ MonoBehaviour:
   AIRespose: {fileID: 3543349109285814799}
   choiceRoot: {fileID: 7092840668109240303}
   choicePrefab: {fileID: 1773870010122699867, guid: f7e40a1d4f754ed4e8dd8a50fc5689ea, type: 3}
+  quitButton: {fileID: 7376344126711092370}
 --- !u!1 &2548177189590127425
 GameObject:
   m_ObjectHideFlags: 0

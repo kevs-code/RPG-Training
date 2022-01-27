@@ -28,6 +28,14 @@ namespace RPG.Dialogue
             onConverationUpdated();
         }
 
+        public void Quit()
+        {
+            currentDialogue = null;
+            currentNode = null;
+            isChoosing = false;
+            onConverationUpdated();
+        }
+
         public bool IsActive()
         {
             return currentDialogue != null;
