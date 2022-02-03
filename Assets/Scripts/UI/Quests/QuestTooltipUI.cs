@@ -17,9 +17,13 @@ namespace RPG.UI.Quests
 
         public void SetUp(QuestStatus status)
         {
-            title.text = status.GetQuest().GetTitle();
-            objectiveContainer.DetachChildren();
-            foreach (var objective in status.GetQuest().GetObjectives())
+            Quest quest = status.GetQuest();
+            title.text = quest.GetTitle();
+            foreach (Transform item in objectiveContainer)
+            {
+                Destroy(item.gameObject);
+            }
+            foreach (var objective in quest.GetObjectives())
             {
                 GameObject prefab = objectiveIncompletePrefab;
                 if (status.IsObjectiveComplete(objective.reference))
@@ -30,7 +34,7 @@ namespace RPG.UI.Quests
                 TextMeshProUGUI objectiveText = objectiveInstance.GetComponentInChildren<TextMeshProUGUI>();
                 objectiveText.text = objective.description;
             }
-            rewardText.text = GetRewardText(status.GetQuest());
+            rewardText.text = GetRewardText(quest);
         }
 
         private string GetRewardText(Quest quest)

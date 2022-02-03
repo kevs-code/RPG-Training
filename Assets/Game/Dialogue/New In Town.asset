@@ -25,6 +25,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: TestRootEntry
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-7553370839078848715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,6 +52,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-3865199114180360452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,6 +79,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: TestSelection
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-2971808424844260937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,6 +106,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-1070779405475461113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +132,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: TestObjective
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +182,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: Attack
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &109018946814185770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +210,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &1184234211496194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,6 +237,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &2609130025502390921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +264,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &4424622894403106769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +292,9 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: TestAIExit
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &8574876732461640640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,3 +319,6 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
