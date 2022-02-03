@@ -67,8 +67,8 @@ MonoBehaviour:
   - 3e34728e-e17b-4170-b8b9-69434d25a0ae
   rect:
     serializedVersion: 2
-    x: 24
-    y: 253
+    x: 127
+    y: 273
     width: 200
     height: 100
   onEnterAction: TestSelection
@@ -114,12 +114,12 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 891
-    y: 63
+    x: 893
+    y: 67
     width: 200
     height: 100
   onEnterAction: 
-  onExitAction: 
+  onExitAction: TestObjective
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
