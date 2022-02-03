@@ -18,15 +18,19 @@ MonoBehaviour:
   - 158800b4-da63-4a6b-be42-027b164e4061
   rect:
     serializedVersion: 2
-    x: 247
-    y: 122
+    x: 246
+    y: 123
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Mother Hubbards Bunions
+        negate: 1
 --- !u!114 &-7365556267200395692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,15 +50,27 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 242
-    y: 338
+    y: 339
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: HasInventoryItem
-    parameters:
-    - d6035543-0f0e-4fab-93ba-3084de314aa9
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Mother Hubbards Bunions
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Mother Hubbards Bunions
+        negate: 0
+      - predicate: HasInventoryItem
+        parameters:
+        - d6035543-0f0e-4fab-93ba-3084de314aa9
+        negate: 0
 --- !u!114 &-4451049701507634592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,14 +89,13 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 458
-    y: 61
+    y: 63
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: GiveQuest
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-2680012531855480230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,8 +120,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,8 +170,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &2640377911983126256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,15 +188,14 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 249
-    y: 0
+    x: 247
+    y: 1
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &3632810731432157399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,16 +214,24 @@ MonoBehaviour:
   - 1121b0a3-7eda-4991-b24d-57e755c21bee
   rect:
     serializedVersion: 2
-    x: 250
-    y: 234
+    x: 248
+    y: 235
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: HasQuest
-    parameters:
-    - Mother Hubbards Bunions
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Mother Hubbards Bunions
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Mother Hubbards Bunions
+        negate: 1
 --- !u!114 &4336794548722104725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,14 +250,13 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 492
-    y: 337
+    y: 338
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &4440727835682620444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,11 +275,10 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 500
-    y: 234
+    y: 235
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
