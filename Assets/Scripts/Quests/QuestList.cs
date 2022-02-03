@@ -62,12 +62,30 @@ namespace RPG.Quests
         }
         private void GiveReward(Quest quest)
         {
-            foreach (Quest.Reward reward in quest.GetRewards())
+            foreach (var reward in quest.GetRewards())
             {
-                bool success = GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, reward.number);
-                if (!success)
+                if (!reward.item.IsStackable())
                 {
-                    GetComponent<ItemDropper>().DropItem(reward.item, reward.number);
+                    int given = 0;
+                    for (int i = 0; i < reward.number; i++)
+                    {
+                        bool isGiven = GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, 1);
+                        if (!isGiven) break;
+                        given++;
+                    }
+                    if (given == reward.number) continue;
+                    for (int i = given; i < reward.number; i++)
+                    {
+                        GetComponent<ItemDropper>().DropItem(reward.item, 1);
+                    }
+                }
+                else
+                {
+                    bool success = GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, reward.number);
+                    if (!success)
+                    {
+                        GetComponent<ItemDropper>().DropItem(reward.item, reward.number);
+                    }
                 }
             }
         }
