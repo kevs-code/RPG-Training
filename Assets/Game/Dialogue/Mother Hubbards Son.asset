@@ -254,7 +254,7 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: 
-  onExitAction: 
+  onExitAction: TestObjective
   condition:
     and: []
 --- !u!114 &4440727835682620444

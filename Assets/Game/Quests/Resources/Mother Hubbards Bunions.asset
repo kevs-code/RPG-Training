@@ -15,8 +15,6 @@ MonoBehaviour:
   objectives:
   - reference: 2
     description: Go irritate the guard.
-  - reference: 3
-    description: Visit the pharmacy.
   rewards:
   - number: 3
     item: {fileID: 11400000, guid: de58f54a3d13333409303758dea27e24, type: 2}
