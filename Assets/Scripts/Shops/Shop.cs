@@ -1,5 +1,6 @@
 using GameDevTV.Inventories;
 using RPG.Control;
+using RPG.Inventories;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -57,18 +58,23 @@ namespace RPG.Shops
         public void ConfirmTransaction()
         {
             Inventory shopperInventory = currentShopper.GetComponent<Inventory>();
-            if (shopperInventory == null) return;
+            Purse shopperPurse = currentShopper.GetComponent<Purse>();
+            if (shopperInventory == null || shopperPurse == null) return;
 
-            var transactionSnapShot = new Dictionary<InventoryItem, int>(transaction);
-            foreach (InventoryItem item in transactionSnapShot.Keys)
+            foreach (ShopItem shopItem in GetAllItems())
             {
-                int quantity = transactionSnapShot[item];
+                InventoryItem item = shopItem.GetInventoryItem();
+                int quantity = shopItem.GetQuantityInTransaction();
+                float price = shopItem.GetPrice();
                 for (int i = 0; i < quantity; i++)
                 {
+                    if (shopperPurse.GetBalance() < price) break;
+
                     bool success = shopperInventory.AddToFirstEmptySlot(item, 1);
                     if (success)
                     {
                         AddToTransaction(item, -1);
+                        shopperPurse.UpdateBalance(-price);
                     }
                 }
             }
