@@ -11,6 +11,16 @@ namespace RPG.Stats
         // Action = (delegate = method pointer list) with (event = overwrite protection)
 
         public event Action onExperienceGained;
+
+        // Debug Update XP method (Shops stock config based on level)
+        private void Update()
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                GainExperience(Time.deltaTime * 1000);
+            }
+        }
+
         public void GainExperience(float experience)
         {
             experiencePoints += experience;
