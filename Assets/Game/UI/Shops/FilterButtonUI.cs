@@ -15,7 +15,7 @@ namespace RPG.UI.Shops
         Button button;
         Shop currentShop;
 
-        private void Start()
+        private void Awake()
         {
             button = GetComponent<Button>();
             button.onClick.AddListener(SelectFilter);
@@ -24,6 +24,11 @@ namespace RPG.UI.Shops
         public void SetShop(Shop currentShop)
         {
             this.currentShop = currentShop; 
+        }
+
+        public void RefreshUI()
+        {
+            button.interactable = currentShop.GetFilter() != category;
         }
 
         private void SelectFilter()
