@@ -2176,15 +2176,15 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 9c635c27b368dde42820719150cbeae5, type: 2}
     - target: {fileID: 5987734871133296732, guid: 19fecf2615a806048bd4cec1dcf58e8c, type: 3}
       propertyPath: stockConfig.Array.data[0].initialStock
-      value: 40
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5987734871133296732, guid: 19fecf2615a806048bd4cec1dcf58e8c, type: 3}
       propertyPath: stockConfig.Array.data[1].initialStock
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5987734871133296732, guid: 19fecf2615a806048bd4cec1dcf58e8c, type: 3}
       propertyPath: stockConfig.Array.data[2].initialStock
-      value: 40
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5987734871133296732, guid: 19fecf2615a806048bd4cec1dcf58e8c, type: 3}
       propertyPath: stockConfig.Array.data[3].initialStock
@@ -2216,7 +2216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5987734871133296732, guid: 19fecf2615a806048bd4cec1dcf58e8c, type: 3}
       propertyPath: stockConfig.Array.data[1].buyingDiscountPercentage
-      value: 23.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987734871133296732, guid: 19fecf2615a806048bd4cec1dcf58e8c, type: 3}
       propertyPath: stockConfig.Array.data[2].buyingDiscountPercentage
@@ -17797,7 +17797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2801401532256567739, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.75
+      value: -570.74915
       objectReference: {fileID: 0}
     - target: {fileID: 2801744476903332091, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchorMax.x
