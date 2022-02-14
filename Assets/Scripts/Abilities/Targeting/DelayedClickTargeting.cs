@@ -1,5 +1,7 @@
 using RPG.Control;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG.Abilities.Targeting
@@ -10,14 +12,16 @@ namespace RPG.Abilities.Targeting
         PlayerController playerController;
         [SerializeField] Texture2D cursorTexture;
         [SerializeField] Vector2 cursorHotspot;
+        [SerializeField] LayerMask layerMask;
+        [SerializeField] float areaEffectRadius;
 
-        public override void StartTargeting(GameObject user)
+        public override void StartTargeting(GameObject user, Action<IEnumerable<GameObject>> finished)
         {
             playerController = user.GetComponent<PlayerController>();
-            playerController.StartCoroutine(Targeting(user, playerController));
+            playerController.StartCoroutine(Targeting(user, playerController, finished));
         }
 
-        private IEnumerator Targeting(GameObject user, PlayerController playerController)
+        private IEnumerator Targeting(GameObject user, PlayerController playerController, Action<IEnumerable<GameObject>> finished)
         {
             playerController.enabled = false;
             while (true)
@@ -29,9 +33,23 @@ namespace RPG.Abilities.Targeting
                     // Absorb the whole mouse click
                     yield return new WaitWhile(() => Input.GetMouseButton(0));
                     playerController.enabled = true;
+                    finished(GetGameObjectsInRadius());
                     yield break;
                 }
                 yield return null;
+            }
+        }
+
+        private IEnumerable<GameObject> GetGameObjectsInRadius()
+        {
+            RaycastHit raycastHit;
+            if (Physics.Raycast(PlayerController.GetMouseRay(), out raycastHit, 1000, layerMask))
+            {
+                RaycastHit[] hits = Physics.SphereCastAll(raycastHit.point, areaEffectRadius, Vector3.up, 0);
+                foreach (var hit in hits)
+                {
+                    yield return hit.collider.gameObject;
+                }
             }
         }
     }
