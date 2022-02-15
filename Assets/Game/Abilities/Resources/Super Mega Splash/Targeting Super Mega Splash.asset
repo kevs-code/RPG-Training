@@ -18,3 +18,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   areaEffectRadius: 5
+  targetingPrefab: {fileID: 5700673317312075203, guid: 0a37fc9e3f53d7f48ae0e1578d43d8f5, type: 3}
