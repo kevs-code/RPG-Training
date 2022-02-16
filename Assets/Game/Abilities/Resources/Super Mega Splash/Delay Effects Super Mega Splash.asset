@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f320e9ba5a6adf4d9a89c78caf0337b, type: 3}
-  m_Name: Effect Super Mega Splash
+  m_Script: {fileID: 11500000, guid: 4e605a6547bec1040bf8a4159a8ad6f3, type: 3}
+  m_Name: Delay Effects Super Mega Splash
   m_EditorClassIdentifier: 
-  healthChange: -10
+  delay: 0.53
+  delayedEffects:
+  - {fileID: 11400000, guid: 02b8191a6ceda694ca2d1d7859c8a6a4, type: 2}
+  - {fileID: 11400000, guid: f92daa7aba09f54469f2ad26239315d2, type: 2}
