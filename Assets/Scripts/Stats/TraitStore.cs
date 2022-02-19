@@ -1,9 +1,7 @@
-using GameDevTV.Saving;
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Saving;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace RPG.Stats
 {
@@ -14,7 +12,6 @@ namespace RPG.Stats
         class TraitBonus
         {
             public Trait trait;
-            [FormerlySerializedAs("stats")]
             public Stat stat;
             public float additiveBonusPerPoint = 0;
             public float percentageBonusPerPoint = 0;

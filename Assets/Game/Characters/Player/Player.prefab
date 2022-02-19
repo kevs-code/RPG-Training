@@ -175,7 +175,21 @@ MonoBehaviour:
   maxNavMeshProjectionDistance: 1
   raycastRadius: 1
   numberOfAbilities: 6
---- !u!114 &6151672231057331895
+--- !u!114 &7017769042428427378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3587466460408346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b77f51a86cc2f4cb6bd0ea5a3627cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 2
+  dropLibrary: {fileID: 0}
+--- !u!114 &5220287739202342872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,24 +214,10 @@ MonoBehaviour:
     stat: 4
     additiveBonusPerPoint: 0
     percentageBonusPerPoint: 5
-  - trait: 4
+  - trait: 3
     stat: 5
     additiveBonusPerPoint: 0
     percentageBonusPerPoint: 5
---- !u!114 &7017769042428427378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3587466460408346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45b77f51a86cc2f4cb6bd0ea5a3627cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scatterDistance: 2
-  dropLibrary: {fileID: 0}
 --- !u!1001 &543570653068669560
 PrefabInstance:
   m_ObjectHideFlags: 0
