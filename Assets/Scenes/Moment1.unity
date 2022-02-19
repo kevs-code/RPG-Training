@@ -17399,6 +17399,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
+      propertyPath: bonusConfig.Array.data[2].additiveBonusPerPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
+      propertyPath: bonusConfig.Array.data[3].additiveBonusPerPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
+      propertyPath: bonusConfig.Array.data[2].percentageBonusPerPoint
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1827504402252091655, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -17829,7 +17841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2801401532256567739, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.7486
+      value: -570.7497
       objectReference: {fileID: 0}
     - target: {fileID: 2801744476903332091, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchorMax.x
