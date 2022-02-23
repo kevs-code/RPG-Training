@@ -3,6 +3,7 @@ using RPG.SceneManagement;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace RPG.UI
@@ -10,6 +11,8 @@ namespace RPG.UI
     public class MainMenuUI : MonoBehaviour
     {
         LazyValue<SavingWrapper> savingWrapper;
+
+        [SerializeField] TMP_InputField newGameNameField;
 
         private void Awake()
         {
@@ -24,6 +27,11 @@ namespace RPG.UI
         public void ContinueGame()
         {
             savingWrapper.value.ContinueGame();
+        }
+
+        public void NewGame()
+        {
+            savingWrapper.value.NewGame(newGameNameField.text);
         }
     }
 }
