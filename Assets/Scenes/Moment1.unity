@@ -2151,6 +2151,10 @@ PrefabInstance:
       value: Mr Bongo's Emporium
       objectReference: {fileID: 0}
     - target: {fileID: 5987734871133296732, guid: 19fecf2615a806048bd4cec1dcf58e8c, type: 3}
+      propertyPath: maximumBarterDiscount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987734871133296732, guid: 19fecf2615a806048bd4cec1dcf58e8c, type: 3}
       propertyPath: stockConfig.Array.size
       value: 8
       objectReference: {fileID: 0}
@@ -4140,7 +4144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1269586412823351480, guid: bce3fcdfaeaef8144820113ef84865a6, type: 3}
       propertyPath: sceneToLoad
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2494491129357468623, guid: bce3fcdfaeaef8144820113ef84865a6, type: 3}
       propertyPath: m_Name
@@ -16559,7 +16563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1269586412823351480, guid: bce3fcdfaeaef8144820113ef84865a6, type: 3}
       propertyPath: sceneToLoad
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2494491129357468623, guid: bce3fcdfaeaef8144820113ef84865a6, type: 3}
       propertyPath: m_Name
@@ -17400,6 +17404,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
+      propertyPath: bonusConfig.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
+      propertyPath: bonusConfig.Array.data[4].stat
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
+      propertyPath: bonusConfig.Array.data[3].trait
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
+      propertyPath: bonusConfig.Array.data[4].trait
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: bonusConfig.Array.data[2].additiveBonusPerPoint
       value: 1
       objectReference: {fileID: 0}
@@ -17408,8 +17428,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
+      propertyPath: bonusConfig.Array.data[4].additiveBonusPerPoint
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: bonusConfig.Array.data[2].percentageBonusPerPoint
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641906477309722022, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
+      propertyPath: bonusConfig.Array.data[4].percentageBonusPerPoint
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1827504402252091655, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchorMax.y
@@ -17841,7 +17869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2801401532256567739, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.7497
+      value: -570.74744
       objectReference: {fileID: 0}
     - target: {fileID: 2801744476903332091, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchorMax.x

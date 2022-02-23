@@ -61,7 +61,7 @@ namespace RPG.Stats
         public float GetStat(Stat stat)
         {
             return GetBaseStat(stat) * (1 + GetPercentageModifier(stat) / 100) + GetAdditiveModifier(stat);
-            // return GetBaseStat(stat) + GetAdditiveModifier(stat) * (1 + GetPercentageModifier(stat)/100);  // base stat is doing exactly this additive * percentage not percentage should be base * percentage + additive
+            // return GetBaseStat(stat) + GetAdditiveModifier(stat) * (1 + GetPercentageModifier(stat)/100);  // bug solved BaseStat.GetStat() was doing this math additive * percentage not base * percentage + additive
         }
 
 
