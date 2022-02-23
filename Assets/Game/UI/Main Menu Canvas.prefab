@@ -1640,6 +1640,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 475746780453397688, guid: 3ef8d976c2cc01641a2284d0bda46692, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475746780453397688, guid: 3ef8d976c2cc01641a2284d0bda46692, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475746780453397688, guid: 3ef8d976c2cc01641a2284d0bda46692, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1498998891331155266}
+    - target: {fileID: 475746780453397688, guid: 3ef8d976c2cc01641a2284d0bda46692, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 475746780453397688, guid: 3ef8d976c2cc01641a2284d0bda46692, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 475746780453397688, guid: 3ef8d976c2cc01641a2284d0bda46692, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RPG.UI.MainMenuUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 475746780453397688, guid: 3ef8d976c2cc01641a2284d0bda46692, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2404275320372754669, guid: 3ef8d976c2cc01641a2284d0bda46692, type: 3}
       propertyPath: m_text
       value: Quit
@@ -2176,6 +2204,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 130792534806487169}
     m_Modifications:
+    - target: {fileID: 2117841585613926364, guid: 08d1eac61b67183478e436cfb335db21, type: 3}
+      propertyPath: m_Size
+      value: 0.9906988
+      objectReference: {fileID: 0}
+    - target: {fileID: 2117841585613926364, guid: 08d1eac61b67183478e436cfb335db21, type: 3}
+      propertyPath: m_Value
+      value: 0.9999345
+      objectReference: {fileID: 0}
     - target: {fileID: 2732379550252406159, guid: 08d1eac61b67183478e436cfb335db21, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
