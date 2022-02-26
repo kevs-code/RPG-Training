@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad32f8a737a6d143aba447e4a7561c3, type: 3}
+  m_Name: Wooden Dagger
+  m_EditorClassIdentifier: 
+  itemID: 0e537d02-0fa8-4bb5-876f-df1d8c6c63e7
+  displayName: Wooden Dagger
+  description: Half scale sword
+  icon: {fileID: 21300000, guid: d19901b0ee3c38743a7d383bd484b0b5, type: 3}
+  pickup: {fileID: 6376538315039489062, guid: d7329c9522778354482b366f152e73b1, type: 3}
+  stackable: 0
+  price: 5
+  category: 2
+  allowedEquipLocation: 5
+  animatorOverride: {fileID: 22100000, guid: 586929d59b205f548964945bd40b41cb, type: 2}
+  equippedPrefab: {fileID: 3358763487414287240, guid: b0f70a65c1f3f59448266706640fbc6a, type: 3}
+  weaponRange: 1
+  weaponDamage: 5
+  percentageBonus: 0
+  isRightHanded: 1
+  projectile: {fileID: 0}
