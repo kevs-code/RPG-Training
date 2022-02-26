@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a93fc4c163df244a93d3fd522e95e3e, type: 3}
-  m_Name: Ability Super Mega Splash
+  m_Name: Super Mega Splash
   m_EditorClassIdentifier: 
   itemID: 97d48ab4-0828-4312-979c-7f958a3be142
   displayName: Super Mega Splash
