@@ -14,7 +14,7 @@ namespace RPG.Shops
     {
         [SerializeField] string shopName;
         [Range(0, 100)]
-        [SerializeField] float sellingPercentage = 80f;
+        [SerializeField] float sellingPercentage = 50f;
         [SerializeField] float maximumBarterDiscount = 80;
 
         [SerializeField]
