@@ -534,6 +534,34 @@ PrefabInstance:
       propertyPath: uniqueIdentifier
       value: 632b00eb-8780-414a-a935-71928a4e6cc7
       objectReference: {fileID: 0}
+    - target: {fileID: 7013373754127422060, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013373754127422060, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013373754127422060, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1027526979}
+    - target: {fileID: 7013373754127422060, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013373754127422060, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: CompleteObjective
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013373754127422060, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: RPG.Quests.QuestCompletion, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013373754127422060, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7072247388678554444, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
       propertyPath: startingLevel
       value: 2
@@ -548,15 +576,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7147635162029566763, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 7147635162029566763, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 7147635162029566763, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 7147635162029566763, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
       propertyPath: m_LocalPosition.x
@@ -600,10 +628,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7147635162029566767, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
       propertyPath: m_Name
-      value: Heavy
+      value: Swamp Donkey
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+--- !u!1 &1027526978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7147635162029566767, guid: 4cbcd52ca39d13c45be5e387b7cfb234, type: 3}
+  m_PrefabInstance: {fileID: 1027526977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1027526979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027526978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e5d652c309e744aa617860b94243ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 24a964d17eb00d24b8d2aeab43b01b83, type: 2}
+  objective: kill
 --- !u!1001 &1076559818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1545,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2801401532256567739, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.74176
+      value: -570.74994
       objectReference: {fileID: 0}
     - target: {fileID: 2801744476903332091, guid: c5c55b9c5e2348d40bc6ac7e8a9b8138, type: 3}
       propertyPath: m_AnchorMax.x
